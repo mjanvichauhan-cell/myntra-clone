@@ -2,7 +2,7 @@
 
 A responsive front-end clone of the Myntra homepage built using **HTML5, CSS3, and JavaScript**. This project recreates the modern shopping experience of Myntra with interactive UI components, responsive layouts, and dynamic functionality using the DOM.
 
-!myntra-clone[myntracloneimg.png]
+![myntra-clone](myntracloneimg.png)
 
 ## ✨ Features
 
