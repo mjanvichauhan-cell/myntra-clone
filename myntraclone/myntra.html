@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../myntraclone/myntra.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="nav-logo">
+      <div class="logo"></div>
+    </div>
+
+    <div class="panel-ops" id="panelOps">
+      <p class="men">MEN</p>
+      <p class="women">WOMEN</p>
+      <p class="kids">KIDS</p>
+      <p class="home">HOME</p>
+      <p class="beauty">BEAUTY</p>
+      <p class="genz">GENZ</p>
+      <p class="studio">
+        STUDIO
+        <span class="new">NEW</span>
+      </p>
+    </div>
+
+    <div class="nav-search">
+      <button class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search for products, brands and more">
+    </div>
+
+    <div class="nav-right">
+
+      <button class="icon">
+        <i class="fa-regular fa-user"></i>
+        <p>Profile</p>
+      </button>
+
+      <button class="icon">
+        <i class="fa-regular fa-heart"></i>
+        <p>Wishlist</p>
+      </button>
+
+      <button class="icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>Bag</p>
+      </button>
+
+    </div>
+
+  </nav>
+</header>
+
+<main>
+  <div class="coupon-wrapper">
+    <div class="coupon">
+      <div class="coupon-left">
+        <h1>FLAT <span class="rupee">₹</span>400 OFF</h1>
+      </div>
+
+      <div class="coupon-divider">
+        <span class="notch notch-top"></span>
+        <span class="notch notch-bottom"></span>
+      </div>
+
+      <div class="coupon-right">
+        <p>On Your 1<sup>st</sup> Purchase</p>
+        <p class="via-line">
+          Via
+          <span class="brand"><img class="myntra-logo" src="../myntraclone/logo.webp" alt="Myntra"></span>
+          App!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <img src="../myntraclone/main_image .png" alt="Right to Fashion Sale" class="below-coupon-img">
+
+  <section class="bank-offer-carousel" id="bankOfferCarousel">
+    <div class="offer-viewport">
+
+      <div class="offer-slide active">
+        <div class="offer-cards">
+          <div class="mini-card card-dark">
+            <span class="chip"></span>
+            <span class="card-brand">AXIS BANK</span>
+          </div>
+          <div class="mini-card card-blue">
+            <span class="chip"></span>
+            <span class="card-brand">SBI Card</span>
+          </div>
+        </div>
+        <div class="offer-vline"></div>
+        <div class="offer-text">
+          <h2>7.5% CASHBACK + 2.5% EXTRA OFF*</h2>
+          <p>WITH FLIPKART AXIS BANK &amp; SBI CREDIT CARDS</p>
+        </div>
+        <div class="offer-tc">*T&amp;C Apply</div>
+      </div>
+
+      <div class="offer-slide">
+        <div class="offer-cards">
+          <div class="mini-card card-red">
+            <span class="chip"></span>
+            <span class="card-brand">HDFC BANK</span>
+          </div>
+        </div>
+        <div class="offer-vline"></div>
+        <div class="offer-text">
+          <h2>10% INSTANT DISCOUNT*</h2>
+          <p>WITH HDFC BANK CREDIT &amp; DEBIT CARDS</p>
+        </div>
+        <div class="offer-tc">*T&amp;C Apply</div>
+      </div>
+
+      <div class="offer-slide">
+        <div class="offer-cards">
+          <div class="mini-card card-purple">
+            <span class="chip"></span>
+            <span class="card-brand">ICICI BANK</span>
+          </div>
+        </div>
+        <div class="offer-vline"></div>
+        <div class="offer-text">
+          <h2>5% CASHBACK UP TO ₹750*</h2>
+          <p>WITH ICICI BANK CREDIT CARDS</p>
+        </div>
+        <div class="offer-tc">*T&amp;C Apply</div>
+      </div>
+
+    </div>
+
+    <div class="offer-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+    </div>
+  </section>
+
+  <section class="pocket-picks">
+    <h2 class="section-heading">POCKET-FRIENDLY PICKS</h2>
+
+    <div class="picks-wrapper">
+      <button class="picks-arrow picks-prev" id="picksPrev" aria-label="Previous picks">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="picks-track" id="picksTrack">
+        <div class="pick-card">
+          <img src="https://images.meesho.com/images/products/910181201/rk2ez_512.webp?width=512" alt="Pretty Dresses">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>899</div>
+            <div class="pick-label">Pretty Dresses</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cpimg.tistatic.com/11087274/b/4/Women-Western-Tops..jpg" alt="Modern Tops">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>499</div>
+            <div class="pick-label">Modern Tops</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301061605OLIVE_2_800x.jpg?v=1775235195&width=700&height=933&crop=center" alt="style-forward Shirts">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>699</div>
+            <div class="pick-label">style-forward Shirts</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301056645GREY_2_800x.jpg?v=1773416152&width=700&height=933&crop=center" alt="Jacket">
+          <div class="pick-info">
+            <div class="pick-price">STARTING <span class="rupee">₹</span>499</div>
+            <div class="pick-label">Dapper Jackets</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301059967MIDBLUE_2_800x.jpg?v=1774009432&width=700&height=933&crop=center" alt="Jeans">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>899</div>
+            <div class="pick-label">Flattering Jeans</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301053370NAVY_2_800x.jpg?v=1771005030&width=700&height=933&crop=center" alt="Trousers">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>899</div>
+            <div class="pick-label">Top-Trending Trousers</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301053916BLACK_2_800x.jpg?v=1769691581&width=700&height=933&crop=center" alt="Trousers">
+          <div class="pick-info">
+            <div class="pick-price">UNDER <span class="rupee">₹</span>799</div>
+            <div class="pick-label">Tailored Trouser</div>
+          </div>
+        </div>
+
+        <div class="pick-card">
+          <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/files/301031617MIDBLUE_2_800x.jpg?v=1766069828&width=700&height=933&crop=center" alt="Jeans">
+          <div class="pick-info">
+            <div class="pick-price">STARTING <span class="rupee">₹</span>999</div>
+            <div class="pick-label">Jeans</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="picks-arrow picks-next" id="picksNext" aria-label="Next picks">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <div class="picks-tab">UPTO <span class="rupee">₹</span>400 OFF</div>
+    </div>
+
+    <div class="picks-dots" id="picksDots"></div>
+  </section>
+
+  <div class="banner"><img src="../myntraclone/swagimg.png" alt="Swag Sale"></div>
+
+  <section class="shop-category">
+    <h2 class="section-heading">SHOP BY CATEGORY</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <div class="banner"><img src="../myntraclone/img4.png" alt="Promo banner"></div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+
+      <div class="footer-col">
+        <h4>ONLINE SHOPPING</h4>
+        <ul>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Genz</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Myntra Insider</a></li>
+        </ul>
+
+        <h4 class="useful-links-heading">USEFUL LINKS</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Whitehat</a></li>
+          <li><a href="#">Cleartrip</a></li>
+          <li><a href="#">Myntra Global</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CUSTOMER POLICIES</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">T&amp;C</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Track Orders</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Cancellation</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Grievance Redressal</a></li>
+          <li><a href="#">FSSAI Food Safety</a></li>
+          <li><a href="#">Connect app</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col app-col">
+        <h4>EXPERIENCE MYNTRA APP ON MOBILE</h4>
+        <div class="app-badges">
+          <a href="#" class="badge badge-google">
+            <i class="fa-brands fa-google-play"></i>
+            <span>
+              <small>GET IT ON</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+          <a href="#" class="badge badge-apple">
+            <i class="fa-brands fa-apple"></i>
+            <span>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+        </div>
+
+        <h4>KEEP IN TOUCH</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col trust-col">
+        <div class="trust-item">
+          <i class="fa-solid fa-certificate trust-icon"></i>
+          <p><strong>100% ORIGINAL</strong> guarantee for all products at myntra.com</p>
+        </div>
+        <div class="trust-item">
+          <i class="fa-solid fa-rotate-left trust-icon"></i>
+          <p><strong>Return within 14 days</strong> of receiving your order</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-popular">
+      <h5>POPULAR SEARCHES</h5>
+      <p>
+        Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags |
+        Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings |
+        Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings |
+        Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show |
+        Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes |
+        Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>In case of any concern, <a href="#">Contact Us</a></p>
+      <p>&copy; 2026 www.myntra.com. All rights reserved.</p>
+      <p>A Flipkart company</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../myntraclone/myntra.js"></script>
+</body>
+</html>
